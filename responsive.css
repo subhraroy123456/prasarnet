@@ -14,6 +14,19 @@
 }
 
 @media (min-width: 1025px) and (max-width: 1199px) {
+  header .nav-btns {
+    gap: 0 5px;
+  }
+  header nav .nav-right {
+    gap: 0 10px;
+  }
+  header nav .nav-right ul {
+    gap: 0 12px;
+  }
+  header .nav-btn {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
   .ind-outer .ind-content-img > img {
     width: 300px;
   }
@@ -75,7 +88,8 @@
   .con-form-container p {
     font-size: 18px;
   }
-  .con-form-container form .form-input input::placeholder, .con-form-container form .form-input textarea::placeholder {
+  .con-form-container form .form-input input::placeholder,
+  .con-form-container form .form-input textarea::placeholder {
     font-size: 16px;
   }
   .col-banner-left {
@@ -164,7 +178,95 @@
   }
 }
 @media (max-width: 1024px) {
-  .col-banner-left h1, .col-banner-left h1 span.span-box, .col-banner-left h1 span.span-box-grn {
+  header.active .overlay {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .overlay {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  header .logo img {
+    max-width: 160px;
+  }
+  header.active .nav-menu {
+    left: 0;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #fff;
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 3px 12px #00000026;
+    transition: all 0.5s ease-in-out;
+    z-index: 999999999;
+  }
+  .nav-menu ul {
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start !important;
+    width: 100%;
+  }
+  .nav-menu ul li {
+    width: 100%;
+  }
+  .nav-menu ul li a {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+    display: block;
+    width: 100%;
+  }
+  .nav-menu ul li:last-child a {
+    border-bottom: 0;
+  }
+  header nav .nav-right ul li::after {
+    display: none;
+  }
+  header nav .nav-right {
+    gap: 0px;
+  }
+  .toggle-btns {
+    display: flex;
+    align-items: center;
+    min-width: 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .toggle-btns .times {
+    display: none;
+  }
+  .toggle-btns .bars {
+    display: block;
+  }
+  header.active .toggle-btns .times {
+    display: block;
+  }
+  header.active .toggle-btns .bars {
+    display: none;
+  }
+  header .nav-btn {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+  .col-banner-left h1,
+  .col-banner-left h1 span.span-box,
+  .col-banner-left h1 span.span-box-grn {
     font-size: 36px;
   }
   .col-banner-left h1 span.span-box-grn {
@@ -177,7 +279,7 @@
     width: 900px;
   }
   .con-banner-left-img {
-    left: -125px!important;
+    left: -125px !important;
   }
   .blog-banner-content h1 {
     font-size: 40px;
@@ -579,6 +681,39 @@
   }
 }
 @media (max-width: 767px) {
+  .footer-content ul li a {
+    font-size: 16px;
+  }
+  .footer-content button {
+    font-size: 18px;
+  }
+  .row-btm {
+    padding-top: 15px;
+  }
+  .footer {
+    padding: 40px 0;
+  }
+  .footer-col2 {
+    padding-left: 15px !important;
+  }
+  .footer-col4 {
+    padding-left: 15px !important;
+  }
+  .srv-sec2-content-info h4 {
+    margin-top: 6px;
+  }
+  .industry-sec1 {
+    padding-bottom: 0 !important;
+  }
+  .srv-page-sec1 {
+    padding-bottom: 0 !important;
+  }
+  .hero .hero-left {
+    padding: 0 15px;
+  }
+  .hero .container {
+    padding: 0 !important;
+  }
   .con-form-bottom span {
     font-size: 18px;
   }

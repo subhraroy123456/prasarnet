@@ -16,8 +16,51 @@
     <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
+    <div class="scrollToTopBtn">
+      <iconify-icon icon="formkit:arrowup"></iconify-icon>
+    </div>
+    <header>
+      <div class="overlay"></div>
+      <nav>
+        <div class="container container-flex">
+          <div class="logo">
+            <a href="index.html">
+              <img src="imgs/logo.png" alt="">
+            </a>
+          </div>
+          <div class="nav-right">
+            <div class="nav-menu">
+              <ul class="list-unstyled p-0 m-0">
+                <li class="active">
+                  <a href="index.html">home</a>
+                </li>
+                <li>
+                  <a href="services.html">services</a>
+                </li>
+                <li>
+                  <a href="industry.html">industries</a>
+                </li>
+                <li>
+                  <a href="">about us</a>
+                </li>
+                <li><a href="">case studies</a></li>
+                <li><a href="blog.html">blogs</a></li>
+              </ul>
+            </div>
+            <div class="nav-btns">
+              <a href="contact.html" class="nav-btn-outline nav-btn">contact us</a>
+            <a href="" class="nav-btn-bg nav-btn d-none d-lg-block">Get a quote</a>
+            </div>
+            <div class="toggle-btns">
+              <iconify-icon icon="prime:bars" class="bars"></iconify-icon>
+              <iconify-icon icon="ic:round-close" class="times"></iconify-icon>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <div class="hero">
-      <div class="container-wrap">
+      <div class="container-wrap container">
         <div class="hero-left">
           <div class="hero-left-top">
             <div class="tag">
@@ -226,14 +269,18 @@
 
     <section class="services">
       <div class="serv-marqee">
+  <div class="marquee-inner">
+    <span>service</span>
         <span>service</span>
         <span>service</span>
         <span>service</span>
         <span>service</span>
         <span>service</span>
         <span>service</span>
-        <span>service</span>
-      </div>
+       
+  </div>
+</div>
+      
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -247,9 +294,10 @@
         </div>
 
         <div class="row g-5 mt-3 mt-md-5">
-          <div class="col-12 col-lg-6 col-md-6">
+          <div class="col-12 col-lg-6 col-md-6 service-content-col">
+            <div class="grdnt-circle1"></div>
             <div class="service-content">
-              <div class="grdnt-circle1"></div>
+              
               <h4>Design & Developement</h4>
               <ul class="list-unstyled p-0 m-0">
                 <li>
@@ -284,7 +332,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6 col-md-6">
+          <div class="col-12 col-lg-6 col-md-6 service-content-col">
             <div class="service-content">
               <h4>Lead Generation</h4>
               <ul class="list-unstyled p-0 m-0">
@@ -320,7 +368,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6 col-md-6">
+          <div class="col-12 col-lg-6 col-md-6 service-content-col">
             <div class="service-content">
               <h4>Digital Branding</h4>
               <ul class="list-unstyled p-0 m-0">
@@ -356,9 +404,10 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6 col-md-6">
+          <div class="col-12 col-lg-6 col-md-6 service-content-col">
+            <div class="grdnt-circle2"></div>
             <div class="service-content">
-              <div class="grdnt-circle2"></div>
+              
               <h4>Social Media Marketing</h4>
               <ul class="list-unstyled p-0 m-0">
                 <li>
@@ -393,9 +442,10 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6 col-md-6">
+          <div class="col-12 col-lg-6 col-md-6 service-content-col">
+            <div class="grdnt-circle3"></div>
             <div class="service-content">
-              <div class="grdnt-circle3"></div>
+              
               <h4>Content Marketing</h4>
               <ul class="list-unstyled p-0 m-0">
                 <li>
@@ -429,7 +479,8 @@
               </a>
             </div>
           </div>
-          <div class="col-12 col-lg-6 col-md-6">
+          <div class="col-12 col-lg-6 col-md-6 service-content-col">
+            <div class="grdnt-circle4"></div>
             <div class="service-content">
               <h4>Digital Advertisements</h4>
               <ul class="list-unstyled p-0 m-0">
@@ -470,14 +521,17 @@
 
     <section class="services industries">
       <div class="serv-marqee">
-        <span>industries</span>
-        <span>industries</span>
-        <span>industries</span>
-        <span>industries</span>
-        <span>industries</span>
-        <span>industries</span>
-        <span>industries</span>
+        <div class="marquee-inner">
+          <span>industries</span>
+          <span>industries</span>
+          <span>industries</span>
+          <span>industries</span>
+          <span>industries</span>
+          <span>industries</span>
+          
+        </div>
       </div>
+      
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -776,17 +830,15 @@
 
     <section class="wrapper step-wrapper services industrie">
       <div class="serv-marqee">
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
+        <div class="marquee-inner">
+          <span>process</span>
+          <span>process</span>
+          <span>process</span>
+          <span>process</span>
+          <span>process</span>
+          <span>process</span>
+        </div>
       </div>
-      
-
-        
         <div class="container">
           <div class="row">
             <div class="col-12">
@@ -1093,25 +1145,37 @@
             <div class="row g-0 counter-info">
               <div class="col-12 col-md-6 ">
                 <div class="counter-content br-right br-bottom">
-                  <h3 class="counter">500+</h3>
+                  <div class="info-txt">
+                             <h3 class="counter">500</h3> <em>+</em>
+                          </div>
+                 
                   <span>satisfied customers</span>
                 </div>
               </div>
               <div class="col-12 col-md-6 ">
                 <div class="counter-content br-bottom">
-                  <h3>10+</h3>
+                  <div class="info-txt">
+                             <h3 class="counter">10</h3> <em>+</em>
+                          </div>
+                  
                   <span>years experience</span>
                 </div>
               </div>
               <div class="col-12 col-md-6">
                 <div class="counter-content br-right">
-                  <h3>10+</h3>
+                  <div class="info-txt">
+                             <h3 class="counter">10</h3> <em>+</em>
+                          </div>
+                  
                   <span>Years Experience</span>
                 </div>
               </div>
               <div class="col-12 col-md-6">
                 <div class="counter-content ">
-                  <h3>40+</h3>
+                  <div class="info-txt">
+                             <h3 class="counter">40</h3> <em>+</em>
+                          </div>
+                 
                   <span>Projects Completed</span>
                 </div>
               </div>
@@ -1124,14 +1188,17 @@
 
     <section class="blogs">
       <div class="serv-marqee">
-        <span>blogs</span>
-        <span>blogs</span>
-        <span>blogs</span>
-        <span>blogs</span>
-        <span>blogs</span>
-        <span>blogs</span>
-        <span>blogs</span>
+        <div class="marquee-inner">
+          <span>blogs</span>
+          <span>blogs</span>
+          <span>blogs</span>
+          <span>blogs</span>
+          <span>blogs</span>
+          <span>blogs</span>
+          
+        </div>
       </div>
+     
       <div class="container">
             <div class="row">
               <div class="col-12">
@@ -1234,258 +1301,89 @@
     </section>
 
 
-    <section class="services-page-sec ">
-      <div class="serv-marqee">
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
-        <span>process</span>
-      </div>
+    <footer class="footer">
       <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="serv-heading">
-                  <h2>
-                    We optimize websites that  <span class="srv-grn">wow visitors & convert </span> them into <span class="srv-bg-grn">loyal customers</span>
-                  </h2>
-                </div>
+        <div class="row row-top gy-4">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer-content">
+              <div class="logo">
+                <a href="">
+                  <img src="imgs/footer-logo.png" alt="">
+                </a>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing mauris volutpat ante ut sagittis efficitur arcu diam faucibus eli quis rhoncus enim augue ut orci donec.</p>
+              <div class="follow">
+                <span>follow us on: </span>
+                <ul class="list-unstyled p-0 m-0">
+                  <a href="">
+                    <img src="imgs/facebook.png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="imgs/youtube.png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="imgs/twitter.png" alt="">
+                  </a>
+                  <a href="">
+                    <img src="imgs/linkedin.png" alt="">
+                  </a>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div class="row mt-5">
-              <div class="cards">
-                <div class="card-wrapper2 container">
-                  <div class="cardd2">
-                    <div class="row align-items-end gy-3">
-                      <div class="col-12 col-lg-6">
-                        <h4>step 01</h4>
-                        <h5>initial discussion</h5>
-                        <img src="imgs/step1-img.svg" alt="" class="img-fluid" />
-                      </div>
-                      <div class="col-12 col-lg-6">
-                        <div class="step-container">
-                          <ul class="list-unstyled p-0 m-0">
-                            <li>
-                              <div class="step-list-num">
-                                <span>01</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-      
-                            <li>
-                              <div class="step-list-num">
-                                <span>02</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-      
-                            <li>
-                              <div class="step-list-num">
-                                <span>03</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-wrapper2 container">
-                  <div class="cardd2">
-                    <div class="row align-items-end gy-3">
-                      <div class="col-12 col-lg-6">
-                        <h4>step 02</h4>
-                        <h5>Project Planning</h5>
-                        <img src="imgs/step2-img.svg" alt="" class="img-fluid" />
-                      </div>
-                      <div class="col-12 col-lg-6">
-                        <div class="step-container">
-                          <ul class="list-unstyled p-0 m-0">
-                            <li>
-                              <div class="step-list-num">
-                                <span>01</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-      
-                            <li>
-                              <div class="step-list-num">
-                                <span>02</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-      
-                            <li>
-                              <div class="step-list-num">
-                                <span>03</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-wrapper2 container">
-                  <div class="cardd2 gradient-orange">
-                    <div class="row align-items-end gy-3">
-                      <div class="col-12 col-lg-6">
-                        <h4>step 03</h4>
-                        <h5>Project Planning</h5>
-                        <img src="imgs/step3-img.svg" alt="" class="img-fluid" />
-                      </div>
-                      <div class="col-12 col-lg-6">
-                        <div class="step-container">
-                          <ul class="list-unstyled p-0 m-0">
-                            <li>
-                              <div class="step-list-num">
-                                <span>01</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>Production</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-      
-                            <li>
-                              <div class="step-list-num">
-                                <span>02</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-      
-                            <li>
-                              <div class="step-list-num">
-                                <span>03</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-wrapper2 container gy-3">
-                  <div class="cardd2 gradient-purple">
-                    <div class="row align-items-end">
-                      <div class="col-12 col-lg-6">
-                        <h4>step 04</h4>
-                        <h5>Review & Launch</h5>
-                        <img src="imgs/step4-img.svg" alt="" class="img-fluid" />
-                      </div>
-                      <div class="col-12 col-lg-6">
-                        <div class="step-container">
-                          <ul class="list-unstyled p-0 m-0">
-                            <li>
-                              <div class="step-list-num">
-                                <span>01</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>Production</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-      
-                            <li>
-                              <div class="step-list-num">
-                                <span>02</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-      
-                            <li>
-                              <div class="step-list-num">
-                                <span>03</span>
-                              </div>
-                              <div class="step-list-info">
-                                <h6>client needs assessment</h6>
-                                <p>
-                                  We conduct a detailed discussion to understand your
-                                  objectives, challenges, and vision.
-                                </p>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="col-12 col-md-6 col-lg-2 footer-col2">
+            <div class="footer-content">
+              <h4>Company</h4>
+              <ul class="list-unstyled p-0 m-0">
+                <li><a href="">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">our team</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">contact us</a></li>
+                <li><a href="">privacy policy</a></li>
+              </ul>
             </div>
-    </section>
+          </div>
 
-    <section style="height: 100vh;"></section>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer-content">
+              <h4>Services</h4>
+              <ul class="list-unstyled p-0 m-0">
+                <li><a href="">Strategic Planning Services</a></li>
+                <li><a href="">Market Research and Analysis</a></li>
+                <li><a href="">Financial Consulting</a></li>
+                <li><a href="">Operations Improvement</a></li>
+                <li><a href="">Organizational Development</a></li>
+                <li><a href="">Change Management</a></li>
+              </ul>
+            </div>
+          </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha512-0nVWK03Ud0k6o8wDkri8jxX9zQIn00ZHVud3iqBTwd2bGFwJDQShGVb3+vX1adCRxQckKQrIQMFmIA3tfWe+Mg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+          <div class="col-12 col-md-6 col-lg-4 footer-col4">
+            <div class="footer-content">
+              <h4>Subscribe Newsletter</h4>
+              <p>Explore our news and blog content today and take the first step towards unlocking your full business potential.</p>
+              <form action="">
+                <input type="text" placeholder="Email...">
+                <button type="submit">subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-btm align-items-center gy-3">
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <p class="mb-0">Copyright © 2024 <a href="">Prasarnet</a>. All Rights Reserved.</p>
+          </div>
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <p class="mb-0"><a href="" class="pr">Privacy & Cookie Policy</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -1496,16 +1394,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="counter-up.js"></script>
+     <script src="counterup.js"></script>
     <script src="script.js"></script>
 
     <script>
-       jQuery(document).ready(function($) {
-            $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-        });
+      //  jQuery(document).ready(function($) {
+      //       $('.counter').counterUp({
+      //           delay: 10,
+      //           time: 1000
+      //       });
+      //   });
       ( function( $ ) {
         "use strict";
         $(".service-content").tilt({
@@ -1528,6 +1426,10 @@
       window.addEventListener("DOMContentLoaded", () => {
         srvGrn.classList.add("animate");
       });
+    </script>
+
+    <script>
+      
     </script>
   </body>
 </html>

@@ -1,3 +1,29 @@
+$(document).ready(function () {
+  $(".counter").counterUp({
+    delay: 1,
+    time: 1000,
+  });
+});
+var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+var rootElement = document.documentElement;
+
+function handleScroll() {
+  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+  if (rootElement.scrollTop / scrollTotal > 0.05) {
+    scrollToTopBtn.classList.add("showBtn");
+  } else {
+    scrollToTopBtn.classList.remove("showBtn");
+  }
+}
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
+document.addEventListener("scroll", handleScroll);
 var swiper = new Swiper(".swiper-case-studies", {
   loop: true,
   freeMode: true,
@@ -19,7 +45,6 @@ var swiper = new Swiper(".swiper-case-studies", {
     // when window width is >= 320px
     100: {
       slidesPerView: 1,
-
     },
     320: {
       slidesPerView: 1,
@@ -30,7 +55,7 @@ var swiper = new Swiper(".swiper-case-studies", {
     },
     768: {
       slidesPerView: 3,
-    }
+    },
   },
 });
 
@@ -45,7 +70,7 @@ var swiper = new Swiper(".swiper-case-studies2", {
     delay: 1,
     disableOnInteraction: false,
 
-    reverseDirection: true
+    reverseDirection: true,
   },
   freeMode: true,
   speed: 20000,
@@ -55,7 +80,6 @@ var swiper = new Swiper(".swiper-case-studies2", {
     // when window width is >= 320px
     100: {
       slidesPerView: 1,
-
     },
     320: {
       slidesPerView: 1,
@@ -66,7 +90,7 @@ var swiper = new Swiper(".swiper-case-studies2", {
     },
     768: {
       slidesPerView: 3,
-    }
+    },
   },
 });
 
@@ -80,20 +104,20 @@ var swiper = new Swiper(".swiper-testimonials", {
 
 var swiper = new Swiper(".swiper-client", {
   loop: true,
-freeMode: true,
-spaceBetween: 20,
-grabCursor: true,
-slidesPerView: 7,
-loop: true,
-autoplay: {
-delay: 1,
-disableOnInteraction: false,
+  freeMode: true,
+  spaceBetween: 20,
+  grabCursor: true,
+  slidesPerView: 7,
+  loop: true,
+  autoplay: {
+    delay: 1,
+    disableOnInteraction: false,
 
-// reverseDirection: true
-},
-freeMode: true,
-speed: 15000,
-freeModeMomentum: false,
+    // reverseDirection: true
+  },
+  freeMode: true,
+  speed: 5000,
+  freeModeMomentum: false,
   breakpoints: {
     // when window width is >= 320px
     300: {
@@ -115,7 +139,6 @@ freeModeMomentum: false,
   },
 });
 
-
 var swiper = new Swiper(".demo-swiper", {
   loop: true,
   // freeMode: true,
@@ -136,7 +159,6 @@ var swiper = new Swiper(".demo-swiper", {
     // when window width is >= 320px
     100: {
       slidesPerView: 1,
-
     },
     320: {
       slidesPerView: 1,
@@ -147,7 +169,7 @@ var swiper = new Swiper(".demo-swiper", {
     },
     768: {
       slidesPerView: 3.5,
-    }
+    },
   },
 });
 
@@ -189,6 +211,25 @@ if (mediaQuery.matches) {
   });
 }
 
+const toggleBtn = document.querySelector(".toggle-btns");
+const header = document.querySelector("header");
+const overlay = document.querySelector(".overlay");
+
+window.addEventListener("scroll", (e) => {
+  if (scrollY > 10) {
+    header.classList.add("fixed");
+  } else {
+    header.classList.remove("fixed");
+  }
+});
+toggleBtn.addEventListener("click", (e) => {
+  header.classList.toggle("active");
+});
+
+overlay.addEventListener("click", (e) => {
+  header.classList.remove("active");
+});
+
 const faqContents = document.querySelectorAll(".faq-content");
 
 faqContents[0].classList.add("active");
@@ -214,16 +255,3 @@ faqContents.forEach((faqContent) => {
     }
   });
 });
-
-$(document).ready(function () {
-  $(".counter").counterUp({
-    delay: 1,
-    time: 1000,
-  });
-});
-
-
-
-
-
-
